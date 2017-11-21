@@ -9,6 +9,7 @@ describe Sinatra::Parsers::WebhookJsonParser do
         context 'payload is an update' do
           let(:payload) { read_fixture("#{service}/update.json") }
           it 'returns correctly populated params hash' do
+            subject.expects(:env).at_least_once.returns('HTTP_X_GITHUB_EVENT' => 'push')
             expect(result).to include(
               branch: 'feature_branch',
               deleted: false,

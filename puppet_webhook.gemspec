@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'codacy-coverage'
   spec.add_development_dependency 'coveralls'
   spec.add_development_dependency 'github_changelog_generator'
+  spec.add_development_dependency 'mocha'
   spec.add_development_dependency 'rack-test'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'

@@ -38,4 +38,5 @@ module RSpecMixin
 end
 RSpec.configure do |conf|
   conf.include RSpecMixin
+  conf.mock_with :mocha
 end
